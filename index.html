@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Link</title>
+
+<style>
+    body {
+        margin: 0;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .container {
+        position: relative;
+        width: 90%;
+        max-width: 400px;
+    }
+
+    /* 上の「ura_link」部分を隠す */
+    .mask-top {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background: white;
+        z-index: 2;
+    }
+
+    img {
+        width: 100%;
+        display: block;
+    }
+
+    /* 中央の黒い部分をクリック可能にする */
+    .click-area {
+        position: absolute;
+        top: 35%;
+        left: 0;
+        width: 100%;
+        height: 40%;
+        cursor: pointer;
+        z-index: 3;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <div class="mask-top"></div>
+
+    <img src="image.jpg" alt="video">
+
+    <a class="click-area"
+       href="https://lite.tiktok.com/t/ZS9eKHK2XjsEk-RD3PJ/"
+       target="_blank">
+    </a>
+</div>
+
+</body>
+</html>
